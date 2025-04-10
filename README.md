@@ -16,7 +16,7 @@ This repository contains a custom sensor plugin implementation for Gazebo Harmon
 ## Requirements
 
 - Gazebo Harmonic (Garden/Sim version 8.x)
-- Ubuntu 22.04 or compatible OS
+- Ubuntu 24.04 or compatible OS
 - CMake 3.11 or higher
 - C++17 compatible compiler
 
