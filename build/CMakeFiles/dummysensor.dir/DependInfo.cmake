@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/om/Desktop/RFID_Task2/DummySensorSystem.cc" "CMakeFiles/DummySensorSystem.dir/DummySensorSystem.cc.o" "gcc" "CMakeFiles/DummySensorSystem.dir/DummySensorSystem.cc.o.d"
+  "/home/om/Desktop/RFID_Task2/DummySensor.cc" "CMakeFiles/dummysensor.dir/DummySensor.cc.o" "gcc" "CMakeFiles/dummysensor.dir/DummySensor.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

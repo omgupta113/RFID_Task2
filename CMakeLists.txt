@@ -13,10 +13,13 @@ set(GZ_SIM_VER ${gz-sim8_VERSION_MAJOR})
 find_package(gz-sensors8 REQUIRED)
 set(GZ_SENSORS_VER ${gz-sensors8_VERSION_MAJOR})
 
-# Add the sensor library
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/sensor)
+# First, create the sensor library
+add_library(dummysensor SHARED DummySensor.cc)
+target_link_libraries(dummysensor
+  PUBLIC gz-sensors${GZ_SENSORS_VER}::gz-sensors${GZ_SENSORS_VER})
 
-add_library(${PROJECT_NAME} SHARED ${PROJECT_NAME}.cc)
+# Then, create the system plugin that integrates with Gazebo
+add_library(${PROJECT_NAME} SHARED DummySensorSystem.cc)
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
     gz-plugin${GZ_PLUGIN_VER}::gz-plugin${GZ_PLUGIN_VER}
@@ -24,5 +27,3 @@ target_link_libraries(${PROJECT_NAME}
     gz-sensors${GZ_SENSORS_VER}::gz-sensors${GZ_SENSORS_VER}
     dummysensor
 )
-target_include_directories(${PROJECT_NAME}
-    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/sensor)

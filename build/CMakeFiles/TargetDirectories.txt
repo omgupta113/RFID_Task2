@@ -1,6 +1,4 @@
-/home/om/gz_plugins/dummysensor/build/CMakeFiles/DummySensorSystem.dir
-/home/om/gz_plugins/dummysensor/build/CMakeFiles/edit_cache.dir
-/home/om/gz_plugins/dummysensor/build/CMakeFiles/rebuild_cache.dir
-/home/om/gz_plugins/dummysensor/build/sensor/CMakeFiles/dummysensor.dir
-/home/om/gz_plugins/dummysensor/build/sensor/CMakeFiles/edit_cache.dir
-/home/om/gz_plugins/dummysensor/build/sensor/CMakeFiles/rebuild_cache.dir
+/home/om/Desktop/RFID_Task2/build/CMakeFiles/dummysensor.dir
+/home/om/Desktop/RFID_Task2/build/CMakeFiles/DummySensorSystem.dir
+/home/om/Desktop/RFID_Task2/build/CMakeFiles/edit_cache.dir
+/home/om/Desktop/RFID_Task2/build/CMakeFiles/rebuild_cache.dir

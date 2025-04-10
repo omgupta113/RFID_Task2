@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2025 Open Source Robotics Foundation
+ * Copyright (C) 2025 Your Organization
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,29 +23,24 @@
 
 namespace custom
 {
-  
+  /// \brief A simple dummy sensor that publishes a "Hello World" message when loaded
   class DummySensor : public gz::sensors::Sensor
   {
-   
+    /// \brief Load the sensor with SDF parameters.
+    /// \param[in] _sdf SDF Sensor parameters.
+    /// \return True if loading was successful
     public: virtual bool Load(const sdf::Sensor &_sdf) override;
 
-   
+    /// \brief Update the sensor and generate data
+    /// \param[in] _now The current time
+    /// \return True if the update was successful
     public: virtual bool Update(
       const std::chrono::steady_clock::duration &_now) override;
 
-    
-    public: void SetMessage(const std::string &_msg);
-
-    
-    public: const std::string &Message() const;
-
-    
-    private: std::string message{"Hello World"};
-
-    
+    /// \brief Node for communication
     private: gz::transport::Node node;
 
-   
+    /// \brief Publishes sensor data
     private: gz::transport::Node::Publisher pub;
   };
 }
