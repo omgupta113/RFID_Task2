@@ -1,6 +1,6 @@
 # DummySensor Plugin for Gazebo Harmonic
 
-**[⚡ Watch Demo Video ⚡](https://youtu.be/oGc9NSYwBGg)**
+**[⚡ Watch Task Video ⚡](https://youtu.be/oGc9NSYwBGg)**
 
 A simple sensor plugin for Gazebo Harmonic that publishes a "Hello World" message when loaded.
 
